@@ -43,13 +43,13 @@ session_start();
             <div id="right_block">
                 <div id="login-box">
                     <p>MON LOGIN</p>
-                    <?php if ($_SESSION['user']['log'] == 2) :?>
+                    <?php if (isset($_SESSION['user']['log']) && $_SESSION['user']['log'] == 2) :?>
                         <h3>Vous etes connecte</h3>
-                    <?php elseif ($_SESSION['user']['log'] == 1) :?>
+                    <?php elseif (isset($_SESSION['user']['log']) &&  $_SESSION['user']['log'] == 1) :?>
                         <h3>Vous etes deconnecte</h3>
                         <?php session_destroy() ;?>
                       <?php endif ; ?>    
-                    <?php if(!$_SESSION['user']['name']) : ?>
+                    <?php if(!isset($_SESSION['user']['name'])) : ?>
                       <form method="POST" action="user/create.php">
                           Identifiant: <input type="text" name="login" />
                           <br />

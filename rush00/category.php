@@ -43,7 +43,7 @@ session_start();
 $produits=unserialize(file_get_contents("htdoc/private/liste_produits"));
 foreach($produits as $prod)
 {
-  if ($prod["categories"][$_GET["cat"]] == TRUE)
+  if (isset($prod["categories"][$_GET["cat"]]) && $prod["categories"][$_GET["cat"]] == TRUE)
     echo "<h3>
             <img src=\"".$prod["url"]."\" alt=\"".$prod["url"]."\" height = \"70\" width = \"70\"> ".$prod["name"]."\t".$prod["prix"]."€ "." \t
             <input type=\"checkbox\" name=\"".$prod["name"]."\" value=\"".$prod["prix"]."\">
@@ -54,16 +54,16 @@ foreach($produits as $prod)
 				</form>
     		</div>
             </br>
-            <div id="right_block">
-                <div id="login-box">
+			<div id="right_block">
+			<div id="login-box">
                     <p>MON LOGIN</p>
-                    <?php if ($_SESSION['user']['log'] == 2) :?>
+                    <?php if (isset($_SESSION['user']['log']) && $_SESSION['user']['log'] == 2) :?>
                         <h3>Vous etes connecte</h3>
-                    <?php elseif ($_SESSION['user']['log'] == 1) :?>
+                    <?php elseif (isset($_SESSION['user']['log']) &&  $_SESSION['user']['log'] == 1) :?>
                         <h3>Vous etes deconnecte</h3>
                         <?php session_destroy() ;?>
                       <?php endif ; ?>    
-                    <?php if(!$_SESSION['user']['name']) : ?>
+                    <?php if(!isset($_SESSION['user']['name'])) : ?>
                       <form method="POST" action="user/create.php">
                           Identifiant: <input type="text" name="login" />
                           <br />
@@ -74,9 +74,14 @@ foreach($produits as $prod)
                       </form>
                     <?php else : ?>
                     <h1>Bonjour <?= $_SESSION['user']['name'] ;?></h1>
-                      <form method="post" action="user/modif.html">
+                      <form method="POST" action="user/modif.html">
                           <input type="submit" name="profil" value="profil">
                       </form>
+                      <?php if ($_SESSION['user']['droits'] == 2) :?>
+                      <form method="POST" action="user/admin.php">
+                          <input type="submit" name="admin" value="admin">
+                      </form>
+                      <?php endif ;?>
                     <?php endif ; ?>
                 </div>
             </div>
