@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+        <link rel="stylesheet" href="panier.css" />
+        <link rel="stylesheet" href="menu.css" />
+		<title>botanica</title>
+		<style>
+           
+        </style>
+	</head>
+	<header id="header_block">
+                     <!-- MENU -->
+        <div class="menu">
+        <nav class="menu">
+        <ul class="menu">
+          <li class="menu">
+            <a class="animalerie" href="category.php">Animalerie</a>
+              <ul class="sousmenu">
+                <img class="menu_img" src="resources/main/animaux.jpg" alt="animaux" title="animaux"/>
+                  <li>
+                    <a href="sub_category.php">Alimentation</a>
+                  </li>
+                  <li>
+                    <a href="sub_category.php">Aquariums</a>
+                  </li>
+                  <li>
+                    <a href="sub_category.php">Cages</a>
+                  </li>
+                    <li>
+                    <a href="sub_category.php">Accessoires</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+             <a class="plantes" href="category.php">Plantes</a>
+             <ul class="sousmenu">
+                  <img class="menu_img" src="resources/main/interieur.jpg" alt="interieur" title="plante intérieur"/>
+                  <li>
+                    <a href="sub_category.php">Intérieur</a>
+                  </li>
+                  <li>
+                    <a href="sub_category.php">Extérieur</a>
+                  </li>
+                  <li>
+                    <a href="sub_category.php">Semences</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a class="menu" class="materiel" href="category.php">Matériel</a>
+                <ul class="sousmenu">
+                  <img class="menu_img" src="resources/main/outils.jpg" alt="outils" title="outils de jardin"/>
+                  <li>
+                    <a href="sub_category.php">Petit matériel</a>
+                  </li>
+                  <li>
+                    <a href="sub_category.php">Gros matériel</a>
+                  </li>
+                    <li>
+                    <a href="sub_category.php">Pots et accessoires</a>
+                  </li>
+                </ul>
+          </li>
+          <li>
+            <a class="menu" class="terreaux" href="category.php">Terreaux</a>
+                <ul class="sousmenu">
+                    <img class="menu_img" src="resources/main/terreaux.jpg" alt="terreaux" title="terreaux"/>
+                    <li>
+                        <a href="sub_category.php">Terreaux</a>
+                     </li>
+                    <li>
+                        <a href="sub_category.php">Terre</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="admin1.php"><img id="cart" src="resources/main/shopping_cart.png" alt="admin" title="admin"></a>
+            <a href="logout.php"><img id="close" src="resources/main/deconnect.png" alt="Déconnecter" title="Déconnecter"></a>
+          <!--  <img id="doft" src="resources/day_of_the_42.png" alt="doft" title="doft">
+            <img id="loupe" src="resources/loupe.png" alt="loupe" title="loupe">-->
+
+                                <!-- FIN DU MENU -->
+            </p>
+        </div>
+  </header>
+
+
+
+  <?php
+    $produit = "monstera";
+    $description = "plante d'intérieur";
+    $quantite = "2";
+    $prix = "";
+  ?>
+
+
+
+<body>
+        <div id="main">
+            <div id="central_block">
+
+                  <h1>ADMINISTRATEUR</h1>
+                  <table id="panier" >
+                    <tr>
+                        <th class="Produit"> <span class="masse">Utilisateur</span></br></th>
+                        <th class="Description"><span class="masse">Mot de passe</span></br></th>
+                        <th class="Quantite"><span class="masse">Panier</span></br></th>
+                        <th class="Quantite"><span class="masse">Droit</span></br></th>
+                    </tr>
+                    <tr>
+                        <td class="sous_produit"><span><?php echo $produit;?></span></br></td>
+                        <td class="sous_produit"><span><?php echo $produit;?></span></br></td>
+                        <td class="sous_description"><span><?php echo $description;?></span></br></td>
+                        <td class="sous_quantite"><span><select>
+                                                            <option value="valeur1">Administrateur</option> 
+                                                            <option value="valeur2" selected>Utilisateur</option>
+                        </select></span></br>
+                            <form id="form" method="post" action="admin1.php">
+                                  <button id="qty" >ok</button>
+                            </form>
+                        </td>
+                    </tr>
+                  </table>
+
+
+
+
+            </div>
+
+            <div id="right_block">
+                <div id="login-box">
+                    <h2>Mon Compte</h2>
+                </div>
+            </div>
+
+
+        </div>
+  </body>
+  <footer>    
+        <p>
+            &copy cbenetea 2018
+            <a href="mentions_legales.php" alt="Mentions légales" title="Mentions légales">Mentions légales</a>
+        </p>
+  </footer>
+</html>

@@ -1,0 +1,141 @@
+			h1
+            {
+                display: block;
+                width: 100%;
+                color: #555555;
+                font-size: 2vw;
+                font-family: arial;
+                text-align: center;
+            }
+            h2
+            {
+                display: block;
+                width: 100%;
+                color: #555555;
+                font-size: 1.5vw;
+                font-family: arial;
+                text-align: center;
+            }
+            body
+            {
+                width: 100%;
+                max-width: 2000px;
+            	background-color: #F9F9F9;
+                color: #555555;
+                font-family: arial;
+                font-size: 0.8vw;
+            }
+            footer
+            {
+            	display: block;
+                margin-top: 30px;
+                border-top: 2px white solid;
+                text-align: left;
+                font-family: "Courier New";
+                font-style: italic;
+            }
+            td, th
+            {
+                border: 2px solid white;
+                min-width: 200px;
+                text-align: center;
+                
+            }
+            table
+            {
+            	width: 100%;
+            	display: block;
+            	margin: auto;
+            	border-collapse: collapse;
+            }
+            #panier
+            {
+            	width: 100%;
+            	display: block;
+            	display: inline-block;
+            	margin-left: 190px;
+            }
+            #right_block
+            {
+                display: block;
+                display: inline-block;
+                margin-left: 50px;
+                width: 300px;
+                height: 580px;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                background-color: #C1C1C1;
+                box-shadow: 10px 10px 10px black;
+                text-align: center;
+                font-size: 1vw;
+            }
+	        #login_box
+	        {
+	            width: 90%;
+	            display: block;
+	            margin: auto;
+	            padding-top: 15px;
+	            padding-bottom: 15px;
+	        }
+            #main
+            {
+                display: block;
+                width: 100%;
+                display: inline-block;
+            }
+            .menu_img
+            {
+                display: block;
+                margin: auto;
+                max-width: 100px;
+            }
+            #central_block
+            {
+            	display: block;
+                background-color: #C1C1C1;
+                width: 1200px;
+                min-height: 580px;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px black;
+                float: left;
+            }
+            #cart
+            {
+                margin-left: 50px;
+                margin-top: 10px;
+                float: right;
+                max-width: 50px;
+            }
+            #close
+            {
+                position: absolute;
+                max-width: 30px;
+                top: 20px;
+                right: 15px;
+            }
+            #main
+            {
+                display: box;
+                margin-left: 45px;
+                padding-bottom: 10px;
+            }
+            #form , button
+            {
+            	display: box;
+                width: 30px;
+                margin: auto;
+
+            }
+            #form_width
+            {
+                border-left: 2px solid rgb(156,152,153);
+                border-top: 2px solid rgb(156,152,153);
+                width: 100%;
+            }

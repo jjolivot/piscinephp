@@ -1,0 +1,28 @@
+            nav
+            {
+                margin: 0 auto;
+                display: inline-block;
+                border-radius: 10px;
+                width: 100%;
+                background-color: #C1C1C1;
+                color: black;
+                font-size: 1vw;
+                min-height: 50px;
+            }
+            nav li
+            {
+                list-style-type: none;
+            }
+            nav a
+            {
+                text-align: center;
+                margin: 0 auto;
+                display: inline-block;
+                text-decoration: none;
+                color: #555555;
+            }
+            nav > ul > li > a
+            {
+                padding: 10px 60px;
+                color: white;
+            }

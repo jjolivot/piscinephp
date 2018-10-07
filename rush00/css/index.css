@@ -1,0 +1,208 @@
+            h1
+            {
+                display: block;
+                width: 100%;
+                color: #555555;
+                font-size: 2vw;
+                font-family: arial;
+                text-align: center;
+            }
+            body
+            {
+                width: 100%;
+                max-width: 2000px;
+            	background-color: #F9F9F9;
+                color: #555555;
+                font-family: arial;
+                font-size: 0.8vw;
+            }
+            footer
+            {
+                margin-top: 30px;
+                border-top: 2px white solid;
+                text-align: left;
+                font-family: "Courier New";
+                font-style: italic;
+            }
+            em
+            {
+                font-family: georgia;
+                font-size: 0.5vw;
+                font-style: normal;
+            }
+            span
+            {
+                font-family: arial;
+                font-style: italic;
+            }
+            #main
+            {
+                display: block;
+                width: 100%;
+                display: inline-block;
+            }
+            #main_photo
+            {
+                display: block;
+                max-width: 1000px;
+                max-height: 530px;
+                margin: auto;
+                margin-top: auto;
+            }
+            .menu_img
+            {
+                display: block;
+                margin: auto;
+                max-width: 100px;
+            }
+            #central_block
+            {
+                background-color: #C1C1C1;
+                width: 60%;
+                min-width: 1030px;
+                min-height: 580px;
+                max-width: 2030px;
+                max-height: 1080px;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px black;
+                float: left;
+            }
+            #right_block
+            {
+                display: block;
+                display: inline-block;
+                margin-left: 50px;
+                float: left;
+                width: 300px;
+                height: 580px;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                background-color: #C1C1C1;
+                box-shadow: 10px 10px 10px black;
+                text-align: center;
+                font-size: 1vw;
+            }
+            #cart
+            {
+                margin-left: 50px;
+                margin-top: 10px;
+                float: right;
+                max-width: 50px;
+            }
+            #close
+            {
+                position: absolute;
+                max-width: 30px;
+                top: 20px;
+                right: 15px;
+            }
+            .left_img
+            {
+                display: block;
+                max-width: 70px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 10px;
+            }
+            #main
+            {
+                display: box;
+                margin-left: 45px;
+                padding-bottom: 10px;
+            }
+            .right_img
+            {
+                display: block;
+                max-width: 70px;
+                margin: auto;
+            }
+            #brick
+            {
+                display: block;
+                width: 130px;
+                height: 80px;
+                background-image: url("resources/brick.jpg");
+                background-repeat: repeat;
+                margin: auto;
+                padding-top: 0px;
+
+            }
+            #ordinateurs
+            {
+                text-shadow: 6px 6px 7px red;
+            }
+            #form
+            {
+                width: 410px;
+
+            }
+            #form_width
+            {
+                border-left: 2px solid rgb(156,152,153);
+                border-top: 2px solid rgb(156,152,153);
+                width: 100%;
+            }
+            #repondre
+            {
+                position: absolute;
+                top: 118px;
+                left: 440px;
+            }
+            #login_box
+            {
+                width: 90%;
+                display: block;
+                margin: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            #towel
+            {
+                padding-bottom: 15px;
+            }
+            nav
+            {
+                margin: 0 auto;
+                display: inline-block;
+                border-radius: 10px;
+                width: 100%;
+                background-color: #C1C1C1;
+                color: black;
+                font-size: 1vw;
+                min-height: 50px;
+            }
+            nav li
+            {
+                list-style-type: none;
+            }
+            nav a
+            {
+                text-align: center;
+                margin: 0 auto;
+                display: inline-block;
+                text-decoration: none;
+                color: #555555;
+            }
+            nav > ul > li > a
+            {
+                padding: 10px 60px;
+                color: white;
+            }
+            nav a
+            {
+                display: inline-block;
+                text-decoration: none;
+                color: #555555;
+            }
+            nav > ul > li > a
+            {
+                padding: 10px 60px;
+                color: white;
+            }
